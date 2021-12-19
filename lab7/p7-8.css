@@ -1,0 +1,225 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.box div {
+  width: 20%;
+  height: 20%;
+
+}
+.title img
+{
+   width: 100%;
+   height: 100%;
+}
+.wrapper
+{ 
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 30px;
+  height:50em ;
+  width:100% ;
+  
+}
+
+.filters
+{
+  padding:15px ;
+}
+.buttons
+{
+  display: grid;
+  row-gap:30px ;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows:  4fr 4fr 4fr 4fr 4fr 4fr;
+}
+a
+{
+	text-decoration: none;
+}
+.button
+{
+height:30px ;
+width:30% ;
+background-color:rgb(202, 202, 235);
+padding-top:10px ;
+text-align: center;
+border-radius: 4px;
+font-size: large;
+
+}
+label
+{
+	margin-top: 20px;
+}
+.buttons
+{
+	margin-top: 40px;
+	padding:15px ;
+}
+.maket
+{
+  height: 170px;  
+}
+.maket img 
+{
+  width: 100%;
+  height: 100%;
+}
+.products{
+  display: flex;
+  flex-wrap: wrap;
+}
+.item:hover{
+  box-shadow: 5px 3px 4px 2px black;
+
+}
+.item{
+  display: flex;
+  width: 30%;
+  height: 28.5%;
+  margin:20px;
+  flex-wrap: wrap;
+  border-radius: 3px;
+}
+.item img{
+  margin:20px;
+}
+.Name{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.cal{
+  border-top: 1px solid grey;
+    width: 95%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+#pyrig:checked ~ :not(.pyrig)
+{
+display: none;
+}
+#syrniki:checked ~ :not(.syrniki)
+{
+display: none;
+}
+#cake:checked ~ :not(.cake)
+{
+display: none;
+}
+#muffin:checked ~ :not(.muffin)
+{
+display: none;
+}
+#rulet:checked ~ :not(.rulet)
+{
+display: none;
+}
+.citata
+{
+	text-align: right;
+}
+@media (min-width: 730px) and (max-width: 1200px)
+{
+.wrapper
+{ 
+  display: grid;
+  grid-template-columns: 3fr;
+  height:50em ;
+  width:100% ;
+}
+.buttons{
+  display:flex;
+  flex-wrap: wrap;
+  order: 1;
+  justify-content: center;
+  align-content: center;
+}
+.maket{
+  display:none;
+}
+.products{
+  order:2;
+  justify-content: center;
+  align-content: center;
+}
+.cal{
+  display:none;
+}
+.item{
+  width:25%;
+  min-width: 25%;
+}
+.button{ 
+  margin: 15px;
+  width:25%;
+}
+.footer{
+  order:3;
+}
+.Name{
+  margin:0px 0px 10px 10px;
+}
+}
+
+@media (min-width: 375px) and (max-width: 730px)
+{
+.wrapper
+{ 
+  display: grid;
+  grid-template-columns: 3fr;
+  height:50em ;
+  width:100% ;
+}
+.buttons{
+  display:flex;
+  flex-wrap: wrap;
+  order: 1;
+  justify-content: center;
+  align-content: center;
+}
+.maket{
+  display:none;
+}
+.products{
+  order:2;
+  justify-content: center;
+  align-content: center;
+}
+.cal{
+  display:none;
+}
+.item{
+  width:70%;
+  min-width: 70%;
+  border-radius: 10px;
+  
+}
+.button{ 
+  margin: 15px;
+  width:30%;
+}
+.footer{
+  order:3;
+}
+.Name{
+  display:none;
+}
+.preview{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.item img{
+  margin:0px;
+}
+}
